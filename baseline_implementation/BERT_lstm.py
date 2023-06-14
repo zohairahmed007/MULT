@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-## combine object and places model with late fusion method
+
 
 import h5py
 import numpy as np
@@ -80,6 +80,11 @@ df.groupby('label').size()
 
 
 
+
+
+
+
+
 from sklearn.model_selection import train_test_split
 
 train, test = train_test_split(df, test_size=0.2)
@@ -89,16 +94,12 @@ train, test = train_test_split(df, test_size=0.2)
 
 train=pd.read_pickle("train_large.pkl")    
 test=pd.read_pickle("test_large.pkl")     
-    
-#train=train.head(500)
-#test=test.head(100)
+
 
  #Seperate images of pos,neg
 
 train_pos=train[train["label"] == 1]
 train_neg=train[train["label"] == 0]
-
-
 
 
 
@@ -285,21 +286,7 @@ def load_image(path):
 vec_load_image = np.vectorize(load_image, signature = '()->(r,c,d),(s)')
     
 
-#path='data2/train/4.jpg'
-#parts = path.split(os.sep)
 
-#labels =  Classes 
-#labels = labels.astype(np.int32)
-
-
-
-#t=(load_image('data2/train/4.jpg'))  
-
-
-# Dataset creation
-
-
-# Dataset creation
 
 def prepare_data(paths):
     #Images and labels
