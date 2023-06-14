@@ -1,5 +1,5 @@
 
-# DMFL
+# DMFL - Deep Multimodal Federated Learning for Enhanced Multimodal Sentiment Analysis Using Images and Text
 
 This repository includes the original implementation of "**Deep Multimodal Federated Learning for Enhanced Multimodal Sentiment Analysis Using Images and Text**"  in TensorFlow 2.x with TFX as the backend. 
 
