@@ -1,7 +1,7 @@
 
-# DMFL - Deep Multimodal Federated Learning for Enhanced Multimodal Sentiment Analysis Using Images and Text
+# Sentimentality Beyond Words: A Multi-Modal Transformer Approach for Text and Image Sentiment Analysis
 
-This repository includes the original implementation of "**Deep Multimodal Federated Learning for Enhanced Multimodal Sentiment Analysis Using Images and Text**"  in TensorFlow 2.x with TFX as the backend. 
+This repository includes the original implementation of "**Sentimentality Beyond Words: A Multi-Modal Transformer Approach for Text and Image Sentiment Analysis**"  in TensorFlow 2.x with TFX as the backend and Pytorch. 
 
 ## Acknowledgement:
 - This work has been conducted under the supervision of `Prof JX Wang` and School of Computer Science and Engineering, `Central South University`, China.
@@ -9,40 +9,7 @@ This repository includes the original implementation of "**Deep Multimodal Feder
 
 ## Proposed Architecture
 
--  The proposed Stacked-GAP (SG) network, which extracts characteristics from each network unit. The GAP layers (G) reduce the overall network parameters, thereby making the network more resistant to overfitting.
-
-![MG network architecture](https://raw.githubusercontent.com/zohairahmed007/DMFL/main/architecture/Stackedgap.jpg)
-
-
-
--  The MobileNet has been trained on ImageNet to represent emotion information in networks. 
-
-![MG network architecture](https://raw.githubusercontent.com/zohairahmed007/DMFL/main/architecture/MobileNet.jpg)
-
-
-
--  Transfer learning using Universal Sentence Encoder for Sentiment Classfication 
-
-![MG network architecture](https://raw.githubusercontent.com/zohairahmed007/DMFL/main/architecture/use.png)
-
-## Description
-
-
-- The `models/textdata_builder.py` comprises the implementation of text and image pair separation and the construction of frames for subsequent network input.
-
-
-- The `models/visual_net_SG.py` contains the implementaion of visual network.The goal is to extract several levels of features from various divisions, including low-level features (such as tone and boundary), middle-level features (such as texturing and appearance), and high-level features (such as object size and dimension).
-
-- `models/multihead_attention_transformer.py` Multi-head Attention is a module for attention mechanisms that runs multiple times in parallel through an attention mechanism. Multiple attention heads make it possible to pay different amounts of attention to distinct parts of a sequence (e.g., longer-term dependencies versus shorter-term dependencies).
-
-- `models/finetune_text_classification.py` Fine-tuning sentiment classification adapting to freezing the parameters to USE training cycles from losing any information they contain On top of the fixed layers, add some new trainable layers and again training the new layers with an our dataset.
-
-- `models/multimodel_sentiment.py` Combine two networks of mortality and fuse for a conclusive predection. 
-
-- `models/gradcam_regions.py` The Grad-CAM technique utilizes the gradients of the classification score with respect to the final convolutional feature map, to identify the parts of an input image that most impact the classification score. 
-
-## Visual Network Results
-![MG network architecture](https://raw.githubusercontent.com/zohairahmed007/DMFL/main/results/regions.png)
+-  The novel sentiment  model that leverages the power of Multi-modal Transformers (MULT) to seamlessly integrate and process both textual and visual information. 
 
 
 ## Multi Model Sentiment Results
