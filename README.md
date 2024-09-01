@@ -24,6 +24,7 @@ This repository includes the original implementation of "**Sentimentality Beyond
 |6|65|Had to wait a million years to get into Hermès protest|0|0.141103|0.858897|0.953687|0.953687|0.0463129|0.547395|0.452605|0
 |7|329|Be mine maybe puppy December wish|1|0.151342|0.848658|0.0000000698548|0.0000000698548|1|0.0756712|0.924329|1
 
+![alt text](https://github.com/zohairahmed007/MULT/blob/main/results/regions.png?raw=true)
 
 
 ## Requirements
